@@ -11,3 +11,5 @@ Generates a Hierarchical Edge Bundling graph that shows all the connections
 between pages.
 
 
+![Screen Shot](/screen.png?raw=true "Graph Example")
+
