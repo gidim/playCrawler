@@ -1,0 +1,18 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+#{if flash.error}
+    <p style="color:#c00">
+        ${flash.error}
+    </p>
+#{/if}
+
+
+
+
+<form action="@{Application.initCrawl()}" method="GET">
+    <input type="text" name="url" /> 
+    <input type="submit" value="insert URL!" />
+</form>
+
+ <a href="@{Application.displayListOfCrawlers()}">Show crawlers</a> 

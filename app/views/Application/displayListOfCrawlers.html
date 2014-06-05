@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+ 
+<h1>List of crawlers in DB:</h1>
+
+ #{list crawlers, as:'crawler'}
+ 
+ 	<a href="@{Application.displayCrawlAlt(crawler)}">${crawler}</a><br/>
+ 
+  #{/list}
+
+<p>
+<a href="@{Application.index()}">Make new crawler</a>
+</p>

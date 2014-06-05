@@ -1,0 +1,9 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+ 
+<h1>URL: ${url}</h1>
+<h2>Number of pages crawled: ${numOfPages}</h2>
+ 
+ <a href="@{Application.displayListOfCrawlers()}">Show crawlers</a> 
+ 
+<a href="@{Application.index()}">Back to form</a>
